@@ -627,7 +627,7 @@ img {
 
 /* === MEDIA QUERIES === */
 /* == small == */
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 450px) {
   .container {
     margin-left: var(--mb-1);
     margin-right: var(--mb-1);
@@ -636,12 +636,21 @@ img {
     padding: 2rem 0.25rem 4rem;
   }
   .home__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     grid-template-columns: 0.25fr 3fr;
+  }
+  .home__social {
+    display: none;
   }
   .home__blob {
     width: 180px;
   }
-
+  .skills__container {
+    width: 100%;
+    padding: 0 10px;
+  }
   .skills__title {
     font-size: var(--normal-font);
   }
